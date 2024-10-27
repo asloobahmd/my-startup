@@ -1,11 +1,24 @@
 import React, { useState } from "react";
-import { navlinks } from "../constants/index";
+import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { icons } from "../assets/icons";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { navlinks } from "../constants/index";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
+
+  const { pathname } = useLocation();
+
+  const handleLogoClick = () => {
+    if (pathname === "/") {
+      scroll.scrollToTop();
+    }
+  };
+
+  const handleNavLinkClick = () => {
+    setClicked(false);
+  };
 
   return (
     <nav className="w-full md:p-6 fixed top-0 z-50">
@@ -13,7 +26,7 @@ const Navbar = () => {
         className={`bg-brand-primary relative md:bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md md:bg-opacity-10 md:border border-gray-800 mx-auto md:flex items-center justify-center gap-x-6 text-white md:rounded-xl p-3 max-md:py-5 md:w-fit md:px-6`}
       >
         <div>
-          <Link to="/">
+          <Link to={"/"} onClick={handleLogoClick}>
             <img src={logo} alt="" className="h-12 w-12" />
           </Link>
         </div>
@@ -26,16 +39,35 @@ const Navbar = () => {
           } transition-[height] duration-700 ease-in-out max-md:overflow-hidden flex md:items-center max-md:flex-col gap-x-4 max-md:gap-y-4`}
         >
           <ul className="flex max-md:flex-col gap-x-1 max-md:gap-y-1.5">
-            {navlinks.map((item, i) => (
-              <li key={i}>
-                <a
-                  className="py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block"
-                  href={item.link}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            {navlinks.map((item, i) => {
+              if (pathname === "/") {
+                return (
+                  <ScrollLink
+                    to={item.to}
+                    key={i}
+                    smooth={true}
+                    duration={500}
+                    onClick={handleNavLinkClick}
+                  >
+                    <li className="py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
+                      {item.label}
+                    </li>
+                  </ScrollLink>
+                );
+              } else {
+                return (
+                  <Link
+                    to={item?.label === "Contact Us" ? "/contact-us" : ""}
+                    key={i}
+                    onClick={handleNavLinkClick}
+                  >
+                    <li className="py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
+                      {item.label}
+                    </li>
+                  </Link>
+                );
+              }
+            })}
           </ul>
 
           <a

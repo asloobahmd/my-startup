@@ -1,21 +1,21 @@
-import React from "react";
+import ContactForm from "../components/forms/ContactForm";
 
 const Contact = () => {
   return (
-    <main className="min-h-[calc(100vh-90px)] pt-36 p-3">
-      <div className="container max-w-6xl grid sm:grid-cols-2 items-start gap-16 bg-[#0D0D0D] border border-zinc-800 rounded-3xl backdrop-blur-[10px] bg-opacity-80 sm:px-12 p-2 py-12 mb-20">
+    <main className="min-h-[calc(100vh-90px)] pt-36 max-sm:pt-24 p-3">
+      <div className="container max-w-6xl grid sm:grid-cols-2 items-start gap-16 bg-[#0D0D0D] border border-zinc-800 rounded-3xl backdrop-blur-[10px] bg-opacity-80 sm:px-12 p-2 py-8 sm:py-12 mb-20">
         <div className="">
-          <h1 class="text-3xl font-extrabold">Let's Talk</h1>
-          <p class=" text-graytext mt-4">
+          <h1 className="text-3xl font-extrabold">Let's Talk</h1>
+          <p className=" text-graytext mt-4">
             Have some big idea or brand to develop and need help? Then reach out
             we'd love to hear about your project and provide help.
           </p>
 
-          <div class="mt-8">
-            <h2 class=" font-bold">Email</h2>
-            <ul class="mt-4">
-              <li class="flex items-center">
-                <div class=" h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+          <div className="mt-8">
+            <h2 className=" font-bold">Email</h2>
+            <ul className="mt-4">
+              <li className="flex items-center">
+                <div className=" h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -32,7 +32,7 @@ const Contact = () => {
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
                 </div>
-                <a href="" class="text-sm ml-4">
+                <a href="" className="text-sm ml-4">
                   <small className="block">Mail</small>
                   <strong className="text-graytext">info@example.com</strong>
                 </a>
@@ -40,11 +40,11 @@ const Contact = () => {
             </ul>
           </div>
 
-          <div class="mt-8">
-            <h2 class="text-base font-bold">Socials</h2>
+          <div className="mt-8">
+            <h2 className="text-base font-bold">Socials</h2>
 
-            <ul class="flex mt-4 space-x-4">
-              <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <ul className="flex mt-4 space-x-4">
+              <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a href="javascript:void(0)">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const Contact = () => {
                   </svg>
                 </a>
               </li>
-              <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a href="javascript:void(0)">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Contact = () => {
                   </svg>
                 </a>
               </li>
-              <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a href="javascript:void(0)">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,34 +93,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form class="ml-auto space-y-4">
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-full rounded-md py-3 px-4 bg-gray-800 text-white text-sm outline-none focus:outline-accent-dark focus:bg-transparent"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full rounded-md py-3 px-4 bg-gray-800 text-white text-sm outline-none focus:outline-accent-dark focus:bg-transparent"
-          />
-          <input
-            type="text"
-            placeholder="Subject"
-            className="w-full rounded-md py-3 px-4 bg-gray-800 text-white text-sm outline-none focus:outline-accent-dark focus:bg-transparent"
-          />
-          <textarea
-            placeholder="Message"
-            rows="6"
-            className="w-full rounded-md py-3 px-4 resize-none bg-gray-800 text-white text-sm outline-none focus:outline-accent-dark focus:bg-transparent"
-          ></textarea>
-          <button
-            type="button"
-            class="text-white bg-accent-dark hover:bg-accent-darker tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6"
-          >
-            Send
-          </button>
-        </form>
+        <ContactForm />
       </div>
     </main>
   );
