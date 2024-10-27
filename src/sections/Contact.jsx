@@ -15,14 +15,14 @@ const Contact = () => {
         <div className="container p-3">
           <div className="bg-[#0D0D0D] border border-zinc-800 rounded-3xl backdrop-blur-[10px] bg-opacity-80 max-md:w-[88%] max-w-[1000px] mx-auto py-12 px-12">
             <h1 className="text-4xl md:text-6xl text-center tracking-tight md:leading-[1.1] max-w-[600px] mx-auto">
-              Ready to scale your brand to{" "}
+              Ready to scale your business to{" "}
               <span className="font-instrumentSerif font-normal tracking-normal italic">
                 new heights?{" "}
               </span>
             </h1>
             <p className="text-graytext tracking-tight text-center md:text-xl max-w-[600px] mt-7 mx-auto">
-              If you want to achieve ground-breaking growth with increased sales
-              and profitability with paid ads, then you're in the right place.
+              Ready to bring your vision to life? Get in touch with us to
+              discuss your project. 👇
             </p>
             <Link
               to={"/contact-us"}

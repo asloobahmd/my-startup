@@ -49,7 +49,7 @@ const Navbar = () => {
                     duration={500}
                     onClick={handleNavLinkClick}
                   >
-                    <li className="py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
+                    <li className="cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
                       {item.label}
                     </li>
                   </ScrollLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     key={i}
                     onClick={handleNavLinkClick}
                   >
-                    <li className="py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
+                    <li className="cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
                       {item.label}
                     </li>
                   </Link>

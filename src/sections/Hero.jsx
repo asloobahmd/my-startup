@@ -17,22 +17,22 @@ const Hero = () => {
           <div>
             <RatingStar />
             <p className="tracking-tight text-sm text-graytext">
-              200+ businesses scaled
+              5+ businesses scaled
             </p>
           </div>
         </div>
         {/* box */}
         <div className=" max-w-[760px] flex flex-col gap-y-5">
-          <h1 className="text-4xl md:text-[80px] text-center tracking-tight leading-[1.15] font-semibold">
+          <h1 className="text-4xl md:text-[70px] text-center tracking-tight leading-[1.15] font-semibold">
             Ready to{" "}
             <span className="font-instrumentSerif font-normal tracking-normal italic">
               scale
             </span>{" "}
-            your brand with Websites?
+            your business with Websites?
           </h1>
           <p className="text-center text-graytext md:text-xl">
-            If you want to achieve ground-breaking growth with increased sales
-            and profitability with paid ads, then you're in the right place.
+            At iCodeLabs, we blend innovation, creativity, and technology to
+            build custom software that grows with your business.
           </p>
         </div>
         <div className="flex justify-center gap-x-6 mt-8">

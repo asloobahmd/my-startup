@@ -8,9 +8,9 @@ const Aboutus = () => {
       <section className="py-14 md:py-20">
         <div className="p-3 flex flex-col items-center justify-center gap-y-10">
           <h1 className="text-2xl md:text-5xl text-center font-medium tracking-tight md:leading-[1.1] smm:max-w-[90%] md:max-w-[1100px]">
-            Here at Conversion, we focus on returns. We're dedicated to scaling
-            your brand with paid advertising. Break free and take your brand to
-            next level.
+            Here at iCodeLabs, we focus on impact. We’re dedicated to scaling
+            your business with custom software solutions. Elevate your brand and
+            unlock new possibilities in the digital world.
           </h1>
           <a
             target="_blank"
