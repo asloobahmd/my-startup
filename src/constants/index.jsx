@@ -1,6 +1,7 @@
 export const navlinks = [
   { label: "About Us", link: "/#", to: "about-us" },
   { label: "Services", link: "/#", to: "services" },
+  { label: "Pricing", link: "/#", to: "pricing" },
   { label: "Contact Us", link: "/#", to: "contact-us" },
 ];
 
@@ -28,9 +29,30 @@ export const services = [
       </svg>
     ),
   },
+  // {
+  //   title: "App Development",
+  //   desc: "Develops well designed, user-friendly and interactive mobile apps for both Android and iOS.",
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="50"
+  //       height="50"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="2"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //       className="lucide lucide-smartphone"
+  //     >
+  //       <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+  //       <path d="M12 18h.01" />
+  //     </svg>
+  //   ),
+  // },
   {
-    title: "App Development",
-    desc: "Develops well designed, user-friendly and interactive mobile apps for both Android and iOS.",
+    title: "Web Hosting",
+    desc: "Provides end-to-end hosting management for websites, web apps, and APIs, ensuring reliable, secure, and optimized performance on the best platforms.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

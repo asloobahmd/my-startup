@@ -23,11 +23,11 @@ const Navbar = () => {
   return (
     <nav className="w-full md:p-6 fixed top-0 z-50">
       <div
-        className={`bg-brand-primary relative md:bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md md:bg-opacity-10 md:border border-gray-800 mx-auto md:flex items-center justify-center gap-x-6 text-white md:rounded-xl p-3 max-md:py-5 md:w-fit md:px-6`}
+        className={`mx-auto bg-brand-primary relative md:bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md md:bg-opacity-10 md:border border-gray-800 md:flex items-center justify-center gap-x-6 text-white md:rounded-xl p-3 max-md:py-5 md:w-fit md:px-6`}
       >
         <div>
           <Link to={"/"} onClick={handleLogoClick}>
-            <img src={logo} alt="" className="h-12 w-12" />
+            <img src={logo} alt="" className="w-44" />
           </Link>
         </div>
 
@@ -47,23 +47,25 @@ const Navbar = () => {
                     key={i}
                     smooth={true}
                     duration={500}
+                    className="cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block"
+                    activeClass="active-nav-element"
+                    spy={true}
                     onClick={handleNavLinkClick}
                   >
-                    <li className="cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
-                      {item.label}
-                    </li>
+                    {item.label}
                   </ScrollLink>
                 );
               } else {
                 return (
                   <Link
-                    to={item?.label === "Contact Us" ? "/contact-us" : ""}
+                    to={item?.label === "Contact Us" ? "/contact-us" : "/"}
                     key={i}
                     onClick={handleNavLinkClick}
+                    className={`${
+                      item?.label === "Contact Us" ? "bg-gray-800" : ""
+                    } cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block`}
                   >
-                    <li className="cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block">
-                      {item.label}
-                    </li>
+                    {item.label}
                   </Link>
                 );
               }

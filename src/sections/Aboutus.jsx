@@ -6,9 +6,9 @@ const Aboutus = () => {
   return (
     <Element name="about-us">
       <section className="py-14 md:py-20">
-        <div className="p-3 flex flex-col items-center justify-center gap-y-10">
-          <h1 className="text-2xl md:text-5xl text-center font-medium tracking-tight md:leading-[1.1] smm:max-w-[90%] md:max-w-[1100px]">
-            Here at iCodeLabs, we focus on impact. We’re dedicated to scaling
+        <div className="container p-3 flex flex-col items-center justify-center gap-y-10">
+          <h1 className="text-2xl md:text-5xl text-center font-medium tracking-tight md:leading-[1.1] smm:max-w-[90%] md:max-w-[1240px]">
+            Here at AxientLabs, we focus on impact. We’re dedicated to scaling
             your business with custom software solutions. Elevate your brand and
             unlock new possibilities in the digital world.
           </h1>

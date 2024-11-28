@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="absolute left-0 right-0 top-20 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-[rgb(231,157,123)] opacity-20 blur-[100px]"></div>
       </div>
       {/* ------------- */}
-      <div className="container p-3 flex flex-col gap-y-2 items-center ">
+      <div className="container p-3 flex flex-col gap-y-2 items-center">
         <div className="h-[50px] flex gap-x-2 items-center justify-center">
           <CustomerGroup />
           <div>
@@ -31,7 +31,7 @@ const Hero = () => {
             your business with Websites?
           </h1>
           <p className="text-center text-graytext md:text-xl">
-            At iCodeLabs, we blend innovation, creativity, and technology to
+            At AxientLabs, we blend innovation, creativity, and technology to
             build custom software that grows with your business.
           </p>
         </div>
@@ -44,9 +44,9 @@ const Hero = () => {
             Book a call
             {icons.call}
           </a>
-          <button className="bg-gray-800 md:hover:scale-[1.05] duration-300 py-2.5 px-4 rounded-xl">
+          {/* <button className="bg-gray-800 md:hover:scale-[1.05] duration-300 py-2.5 px-4 rounded-xl">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

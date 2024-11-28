@@ -6,7 +6,11 @@
 @tailwind utilities;
 
 body {
-  @apply font-inter bg-mymateblack text-white;
+  @apply font-roboto bg-mymateblack text-white;
+}
+
+.active-nav-element {
+  @apply md:bg-gray-800;
 }
 
 /* .card-shadow {

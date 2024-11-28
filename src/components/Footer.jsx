@@ -1,17 +1,17 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-import { footerinfo, footerlinks, socialIcons } from "../constants/footer-cons";
+import { links } from "../constants/footer-content";
 
 const Footer = () => {
   return (
     <>
       <section className="py-14 border-t border-zinc-800">
         <div className="container p-3">
-          <div className="flex gap-x-2 items-center mb-8">
-            <img src={logo} alt="" className="h-12 w-12" />
-            <h1 className="text-2xl font-semibold">i Code Labs</h1>
+          <div className="flex mb-8">
+            <img src={logo} alt="" className="w-44" />
           </div>
 
-          <div className="flex md:items-center gap-y-10 gap-x-4 justify-between flex-col-reverse smm:flex-row">
+          <div className="flex flex-col-reverse justify-between smm:flex-row smm:items-center gap-y-10 gap-x-4">
             <div className="smm:w-2/3 flex flex-col gap-y-2">
               <p>Newsletter coming soon.. 📩</p>
               <div className="opacity-35">
@@ -37,13 +37,17 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="smm:flex justify-end items-center gap-x-6 max-smm:space-y-8 smm:w-1/3">
+            <div className="smm:w-1/3 smm:flex justify-end items-center gap-x-6 max-smm:space-y-8">
               {/* footer sub sections */}
               <div>
                 <h2 className="mb-3 font-medium">Links</h2>
                 <div className="max-smm:flex gap-x-4 smm:space-y-3 text-sm text-graytext">
-                  {footerlinks.map((item, i) => (
-                    <p key={i}>{item.label}</p>
+                  {links.map((item, i) => (
+                    <p key={i}>
+                      <Link key={i} to={item?.link}>
+                        {item.label}
+                      </Link>
+                    </p>
                   ))}
                 </div>
               </div>
@@ -53,8 +57,8 @@ const Footer = () => {
       </section>
 
       {/* last copyright bar*/}
-      <p className="container text-gray-300 px-3 p-2 text-[12px]">
-        © 2024 iCodeLabs. All Rights Reserved
+      <p className="bg-gray-800 text-center text-gray-300 px-3 p-2 text-[12px]">
+        © 2024 AxientLabs. All Rights Reserved
       </p>
     </>
   );
