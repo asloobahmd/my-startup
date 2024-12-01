@@ -1,7 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { icons } from "../assets/icons";
-import Pic from "../assets/images/aboutuspic.jpg";
+import Pic from "../assets/images/aboutuspic.webp";
 
 const Aboutus = () => {
   return (

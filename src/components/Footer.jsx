@@ -57,7 +57,7 @@ const Footer = () => {
       </section>
 
       {/* last copyright bar*/}
-      <p className="bg-gray-800 text-center text-gray-300 px-3 p-2 text-[12px]">
+      <p className="bg-gray-900 text-center text-gray-300 px-3 p-2 text-[12px]">
         © 2024 AxientLabs. All Rights Reserved
       </p>
     </>

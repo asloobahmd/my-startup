@@ -3,10 +3,10 @@ import React from "react";
 const PricingCard = ({ plan }) => {
   return (
     <div
-      class={`ring-1 shadow-md ${
+      class={`ring-1 shadow-md max-smm:max-w-[320px] smm:max-w-[320px] ${
         plan?.name === "Standard"
-          ? "scale-[1.05] ring-accent-dark shadow-accent-dark"
-          : " ring-gray-800 shadow-gray-700"
+          ? "scale-[1.05] ring-accent-dark"
+          : " ring-gray-800"
       }  rounded-3xl p-8 xl:p-10 `}
     >
       <div class="flex items-center justify-between gap-x-4">
