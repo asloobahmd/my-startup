@@ -18,6 +18,9 @@ export const socialIcons = [
 ];
 
 // footer subsections
-export const links = [{ label: "Contact Us", link: "/contact-us" }];
+export const links = [
+  { label: "Contact Us", link: "/contact-us" },
+  { label: "Privacy policy", link: "#" },
+];
 
 export const info = [];

@@ -17,7 +17,7 @@ const Hero = () => {
           <div>
             <RatingStar />
             <p className="tracking-tight text-sm text-graytext">
-              5+ businesses scaled
+              3+ businesses scaled
             </p>
           </div>
         </div>
