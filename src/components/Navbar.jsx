@@ -62,7 +62,7 @@ const Navbar = () => {
                     key={i}
                     onClick={handleNavLinkClick}
                     className={`${
-                      item?.label === "Contact Us" ? "bg-gray-800" : ""
+                      item?.label === "Contact Us" ? "md:bg-gray-800" : ""
                     } cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block`}
                   >
                     {item.label}
