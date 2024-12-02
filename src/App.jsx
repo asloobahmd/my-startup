@@ -1,22 +1,26 @@
 import React from "react";
-import { Home } from "./pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contact from "./pages/Contact-us";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 import useScrollToTop from "./hooks/scrollToTop";
+import DefaultLayout from "./layouts/DefaultLayout";
+import Contact from "./pages/Contact-us";
+import { Home } from "./pages/Home";
+import PrivacyPolicy from "./pages/Privacy-policy";
 
 const App = () => {
   useScrollToTop(); // whenever we change the page the scroll will be go to top
 
   return (
     <div>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact-us" element={<Contact />} />
+        {/* default layout */}
+        <Route element={<DefaultLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Route>
+
+        {/* Custom Layout */}
       </Routes>
-      <Footer />
     </div>
   );
 };

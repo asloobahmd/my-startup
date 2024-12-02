@@ -20,7 +20,7 @@ export const socialIcons = [
 // footer subsections
 export const links = [
   { label: "Contact Us", link: "/contact-us" },
-  { label: "Privacy policy", link: "#" },
+  { label: "Privacy policy", link: "/privacy-policy" },
 ];
 
 export const info = [];

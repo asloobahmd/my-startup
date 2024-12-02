@@ -95,7 +95,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={loading}
-        className="text-white flex justify-center items-center bg-accent-dark hover:bg-accent-darker tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6"
+        className="flex justify-center items-center text-accenttext bg-accent-dark hover:bg-accent-darker tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6"
       >
         {loading ? (
           <p className="flex text-gray-200">

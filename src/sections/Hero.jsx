@@ -6,9 +6,9 @@ import { icons } from "../assets/icons";
 const Hero = () => {
   return (
     <section className="pb-16 md:pb-24 pt-48">
-      {/* blurred bg snippet */}
+      {/* blurred bg snippet - from this site -> bg.ibelick.com*/}
       <div className="absolute inset-0 -z-10 h-full w-full bg-brand-primary bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-        <div className="absolute left-0 right-0 top-20 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-[rgb(231,157,123)] opacity-20 blur-[100px]"></div>
+        <div className="absolute left-0 right-0 top-20 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-accent-dark opacity-30 blur-[100px]"></div>
       </div>
       {/* ------------- */}
       <div className="container p-3 flex flex-col gap-y-2 items-center">
@@ -39,7 +39,7 @@ const Hero = () => {
           <a
             target="_blank"
             href="https://calendly.com/asloobahmd/15-min-meeting"
-            className="bg-accent-dark flex items-center gap-x-2 md:hover:scale-[1.05] duration-300 hover:bg-accent-darker py-2 px-3 rounded-lg"
+            className="flex items-center gap-x-2 md:hover:scale-[1.05] duration-300 text-accenttext bg-accent-dark hover:bg-accent-darker py-2 px-3 rounded-lg"
           >
             Book a call
             {icons.call}

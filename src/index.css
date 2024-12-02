@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-roboto bg-mymateblack text-white;
+  @apply font-roboto bg-brand-primary text-white;
 }
 
 .active-nav-element {

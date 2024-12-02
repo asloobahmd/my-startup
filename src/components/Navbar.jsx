@@ -23,7 +23,11 @@ const Navbar = () => {
   return (
     <nav className="w-full md:p-6 fixed top-0 z-50">
       <div
-        className={`mx-auto bg-brand-primary relative md:bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md md:bg-opacity-10 md:border border-gray-800 md:flex items-center justify-center gap-x-6 text-white md:rounded-xl p-3 max-md:py-5 md:w-fit md:px-6`}
+        className={`mx-auto relative ${
+          pathname === "/privacy-policy"
+            ? "md:bg-opacity-70 border-none"
+            : "md:bg-opacity-10"
+        } bg-brand-primary md:bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md md:border border-gray-800 md:flex items-center justify-center gap-x-6 text-white md:rounded-xl p-3 max-md:py-5 md:w-fit md:px-6`}
       >
         <div>
           <Link to={"/"} onClick={handleLogoClick}>
@@ -62,7 +66,9 @@ const Navbar = () => {
                     key={i}
                     onClick={handleNavLinkClick}
                     className={`${
-                      item?.label === "Contact Us" ? "md:bg-gray-800" : ""
+                      item?.label === "Contact Us" && pathname === "/contact-us"
+                        ? "md:bg-gray-800"
+                        : ""
                     } cursor-pointer py-1.5 md:px-3 duration-500 rounded-md md:hover:bg-gray-800 inline-block`}
                   >
                     {item.label}
@@ -75,7 +81,7 @@ const Navbar = () => {
           <a
             target="_blank"
             href="https://calendly.com/asloobahmd/15-min-meeting"
-            className="bg-accent-dark flex items-center gap-x-2 md:hover:scale-[1.05] duration-300 hover:bg-accent-darker py-2 px-3 rounded-lg"
+            className="flex items-center gap-x-2 md:hover:scale-[1.05] duration-300 text-accenttext bg-accent-dark hover:bg-accent-darker py-2 px-3 rounded-lg"
           >
             Book a call
             {icons.call}

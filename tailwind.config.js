@@ -26,10 +26,13 @@ export default {
           primary: "#0A0A0A",
         },
         accent: {
-          dark: "#FF4533",
-          darker: "#D43F2F",
+          // dark: "#00509D",
+          // darker: "#003F88",
+          dark: "#FADC07",
+          darker: "#FADC07",
         },
-        mymateblack: "#0A0A0A",
+        accenttext: "#000000",
+        // accenttext: "#FFFFFF",
         graytext: "#999999",
       },
       fontFamily: {

@@ -24,7 +24,7 @@ const Aboutus = () => {
             <a
               target="_blank"
               href="https://calendly.com/asloobahmd/15-min-meeting"
-              className="flex gap-x-2 items-center self-center smm:self-start justify-center w-fit bg-accent-dark md:hover:scale-[1.05] duration-300 hover:bg-accent-darker py-2.5 px-4 rounded-xl"
+              className="flex gap-x-2 items-center self-center smm:self-start justify-center w-fit text-accenttext bg-accent-dark hover:bg-accent-darker md:hover:scale-[1.05] duration-300 py-2.5 px-4 rounded-xl"
             >
               <p>Book a 15min call</p>
               <span>{icons.arrow}</span>

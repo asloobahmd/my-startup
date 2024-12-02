@@ -29,7 +29,7 @@ const Footer = () => {
                   />
                   <button
                     disabled={true}
-                    className="bg-accent-dark duration-300 py-2 px-3 rounded-lg"
+                    className="text-accenttext bg-accent-dark duration-300 py-2 px-3 rounded-lg"
                   >
                     Get Notified
                   </button>

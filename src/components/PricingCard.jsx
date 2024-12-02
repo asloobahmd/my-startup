@@ -49,7 +49,7 @@ const PricingCard = ({ plan }) => {
               stroke-width="1.5"
               stroke="currentColor"
               aria-hidden="true"
-              class="h-6 w-5 flex-none text-blue-600"
+              class="h-6 w-5 flex-none text-accent-dark"
             >
               <path
                 stroke-linecap="round"

@@ -13,7 +13,8 @@ const Contact = () => {
           content="Get in touch with Axient Labs for your software development needs. We specialize in web development, mobile applications, and digital solutions."
         />
       </Helmet>
-      <div className="container max-w-6xl grid sm:grid-cols-2 items-start gap-16 bg-[#0D0D0D] border border-zinc-800 rounded-3xl backdrop-blur-[10px] bg-opacity-80 sm:px-12 p-2 py-8 sm:py-12 mb-20">
+
+      <div className="container p-3 max-w-6xl grid smm:grid-cols-2 items-start gap-16 bg-[#0D0D0D] border border-zinc-800 rounded-3xl backdrop-blur-[10px] bg-opacity-80 smm:px-12 py-8 smm:py-12 mb-20">
         <div className="">
           <h1 className="text-3xl font-extrabold">Let's Talk</h1>
           <p className=" text-graytext mt-4">
