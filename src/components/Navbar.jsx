@@ -35,10 +35,11 @@ const Navbar = () => {
           </Link>
         </div>
 
+        {/* menus area */}
         <div
           className={`text-sm font-medium tracking-tight max-md:px-3 max-md:bg-brand-primary max-md:w-full left-0 top-full max-md:absolute ${
             clicked
-              ? "max-md:h-[220px] max-md:border-b border-gray-800"
+              ? "max-md:h-[250px] max-md:border-b border-gray-800"
               : "max-md:h-0"
           } transition-[height] duration-700 ease-in-out max-md:overflow-hidden flex md:items-center max-md:flex-col gap-x-4 max-md:gap-y-4`}
         >
