@@ -3,9 +3,9 @@ import React from "react";
 const PricingCard = ({ plan }) => {
   return (
     <div
-      class={`ring-1 shadow-md max-smm:max-w-[320px] smm:max-w-[320px] ${
+      class={`bg-[#0D0D0D] shadow-sm border border-zinc-800 max-smm:max-w-[320px] smm:max-w-[320px] ${
         plan?.name === "Standard"
-          ? "scale-[1.05] ring-accent-dark"
+          ? "md:scale-[1.05] border-accent-dark"
           : " ring-gray-800"
       }  rounded-3xl p-8 xl:p-10 `}
     >

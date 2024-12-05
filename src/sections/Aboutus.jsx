@@ -12,11 +12,14 @@ const Aboutus = () => {
             <img
               src={Pic}
               alt="Company desk picture"
-              className="min-h-[320px]"
+              className="min-h-[320px] rounded-[20px]"
             />
           </div>
           <div className="smm:w-1/2 flex flex-col gap-y-10">
-            <h1 className="text-center smm:text-left smm:text-2xl font-medium md:leading-[1.1] smm:max-w-[90%] md:max-w-[1240px]">
+            <h1 className="text-3xl font-semibold max-smm:text-center">
+              About us
+            </h1>
+            <h1 className="text-center smm:text-left smm:text-xl font-medium md:leading-[1.1] smm:max-w-[90%] md:max-w-[1240px]">
               Here at AxientLabs, we focus on impact. We’re dedicated to scaling
               your business with custom software solutions. Elevate your brand
               and unlock new possibilities in the digital world.
@@ -24,7 +27,7 @@ const Aboutus = () => {
             <a
               target="_blank"
               href="https://calendly.com/asloobahmd/15-min-meeting"
-              className="flex gap-x-2 items-center self-center smm:self-start justify-center w-fit text-accenttext bg-accent-dark hover:bg-accent-darker md:hover:scale-[1.05] duration-300 py-2.5 px-4 rounded-xl"
+              className="flex gap-x-2 items-center self-center smm:self-start justify-center w-fit text-accenttext bg-accent-dark hover:bg-accent-darker md:hover:scale-[1.05] duration-300 py-2 px-4 rounded-xl"
             >
               <p>Book a 15min call</p>
               <span>{icons.arrow}</span>

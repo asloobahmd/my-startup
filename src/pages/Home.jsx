@@ -6,6 +6,7 @@ import FAQ from "../sections/FAQ";
 import Contact from "../sections/Contact";
 import Pricing from "../sections/Pricing";
 import { Helmet } from "react-helmet";
+import Process from "../sections/Process";
 
 export const Home = () => {
   return (
@@ -24,7 +25,7 @@ export const Home = () => {
       {/* <Our Clients /> ------------- Card Testimonials (Video or text) and also can include sample results */}
       <Services />
       {/* <Comparision /> ------------ comparision with other agencies (Eg:- Pricing, results, workflow) */}
-      {/* <Process /> ------------ service process and steps */}
+      <Process />
       {/* <Team />  ------------ Our team */}
       <Pricing />
       {/* <FAQ /> */}

@@ -81,7 +81,7 @@ const Navbar = () => {
           <a
             target="_blank"
             href="https://calendly.com/asloobahmd/15-min-meeting"
-            className="flex items-center gap-x-2 md:hover:scale-[1.05] duration-300 text-accenttext bg-accent-dark hover:bg-accent-darker py-2 px-3 rounded-lg"
+            className="flex items-center gap-x-2 md:hover:scale-[1.05] duration-300 text-accenttext bg-accent-dark hover:bg-accent-darker py-1.5 px-3 rounded-lg"
           >
             Book a call
             {icons.call}
