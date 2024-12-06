@@ -7,21 +7,21 @@ const PricingCard = ({ plan }) => {
         plan?.name === "Standard"
           ? "md:scale-[1.05] border-accent-dark"
           : "border-zinc-800"
-      }  rounded-3xl p-8 xl:p-10 `}
+      }  rounded-3xl px-6 py-4 md:py-8`}
     >
       <div class="flex items-center justify-between gap-x-4">
-        <h3 id="tier-standard" class="text-2xl font-semibold leading-8">
+        <h3 id="tier-standard" className="text-xl font-semibold leading-8">
           {plan.name}
         </h3>
       </div>
       {/* <p class="mt-4 text-base leading-6 text-gray-600">
         1 license for only 1 activation
       </p> */}
-      <p class="mt-4 flex items-baseline gap-x-1 font-bold tracking-tight text-gray-400">
+      <p class="mt-6 flex items-baseline gap-x-1 font-bold tracking-tight text-gray-400">
         {plan?.price && (
           <>
-            <span className="text-3xl mr-1">$</span>
-            <span className="text-4xl">{plan.price}</span>
+            <span className="text-3xl">{plan.price}</span>
+            <span className="text-xl mr-1">$</span>
           </>
         )}
         {plan?.priceText && (

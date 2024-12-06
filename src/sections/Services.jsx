@@ -10,8 +10,8 @@ const Services = () => {
         <div className="container p-3 flex flex-col gap-y-10 md:gap-y-14">
           {/* box 1 */}
           <div className="flex flex-col items-center gap-y-6">
-            <h2 className="text-2xl md:text-6xl">How can we help you?</h2>
-            <p className="max-w-[930px] text-center text-graytext md:text-xl">
+            <h2 className="text-3xl font-semibold">How can we help you?</h2>
+            <p className="max-w-[930px] text-center text-graytext">
               At AxientLabs, we provide a full suite of services to elevate your
               business. From web app development to reliable web hosting
               solutions, we create seamless digital experiences. Our focus on

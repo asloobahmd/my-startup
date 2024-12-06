@@ -1,12 +1,10 @@
-import Hero from "../sections/Hero";
-import Aboutus from "../sections/Aboutus";
-import Services from "../sections/Services";
-import Results from "../sections/Results";
-import FAQ from "../sections/FAQ";
-import Contact from "../sections/Contact";
-import Pricing from "../sections/Pricing";
 import { Helmet } from "react-helmet";
+import Aboutus from "../sections/Aboutus";
+import Contact from "../sections/Contact";
+import Hero from "../sections/Hero";
+import Pricing from "../sections/Pricing";
 import Process from "../sections/Process";
+import Services from "../sections/Services";
 
 export const Home = () => {
   return (
@@ -19,12 +17,12 @@ export const Home = () => {
           content="Axient Labs is a software development company specializing in innovative digital solutions, web development, mobile apps, and tech consulting."
         />
       </Helmet>
+
       <Hero />
       {/* <Brands /> ------------- Marquee (brands) */}
       <Aboutus />
-      {/* <Our Clients /> ------------- Card Testimonials (Video or text) and also can include sample results */}
       <Services />
-      {/* <Comparision /> ------------ comparision with other agencies (Eg:- Pricing, results, workflow) */}
+      {/* <Testimonials /> ------------- Testimonials/Reviews Section and also can include sample results */}
       <Process />
       {/* <Team />  ------------ Our team */}
       <Pricing />

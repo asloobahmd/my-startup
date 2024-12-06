@@ -15,23 +15,25 @@ const Aboutus = () => {
               className="min-h-[320px] rounded-[20px]"
             />
           </div>
-          <div className="smm:w-1/2 flex flex-col gap-y-10">
+          <div className="smm:w-1/2 flex flex-col gap-y-4">
             <h1 className="text-3xl font-semibold max-smm:text-center">
               About us
             </h1>
-            <h1 className="text-center smm:text-left smm:text-xl font-medium md:leading-[1.1] smm:max-w-[90%] md:max-w-[1240px]">
+            <h1 className="text-center smm:text-left text-graytext smm:max-w-[90%] md:max-w-[1240px]">
               Here at AxientLabs, we focus on impact. We’re dedicated to scaling
-              your business with custom software solutions. Elevate your brand
-              and unlock new possibilities in the digital world.
+              your business with websites & custom software solutions that drive
+              results. Our team blends expertise in innovation, design, and
+              technology to create transformative experiences that help your
+              brand stand out in a competitive digital landscape. <br /> <br />
+              We don’t just build software—we build powerful partnerships. From
+              the initial concept to full-scale deployment, we work alongside
+              you to ensure that every solution aligns with your vision and
+              growth goals. Together, we’ll unlock new opportunities and push
+              the boundaries of what’s possible in the digital world. <br />
+              <br />
+              Your success is our mission. Let’s create something extraordinary
+              that drives lasting value for your business.
             </h1>
-            <a
-              target="_blank"
-              href="https://calendly.com/asloobahmd/15-min-meeting"
-              className="flex gap-x-2 items-center self-center smm:self-start justify-center w-fit text-accenttext bg-accent-dark hover:bg-accent-darker md:hover:scale-[1.05] duration-300 py-2 px-4 rounded-xl"
-            >
-              <p>Book a 15min call</p>
-              <span>{icons.arrow}</span>
-            </a>
           </div>
         </div>
       </section>

@@ -11,9 +11,9 @@ const Pricing = () => {
           class="container p-3 sm:px-10 flex flex-col justify-center items-center text-base mx-auto"
           id="pricing"
         >
-          <div className="mb-16 flex flex-col gap-y-8 text-center">
-            <h3 class="text-5xl font-semibold">Packages</h3>
-            <p className="max-w-5xl text-graytext md:text-xl">
+          <div className="mb-16 flex flex-col gap-y-4 text-center">
+            <h3 class="text-3xl font-semibold">Plans</h3>
+            <p className="max-w-3xl text-graytext">
               Choose the perfect plan for your needs. Whether you're looking for
               a simple static website, a dynamic solution with advanced
               features, or a complete e-commerce setup, we've got you covered.

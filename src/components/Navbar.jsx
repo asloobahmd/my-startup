@@ -37,7 +37,7 @@ const Navbar = () => {
 
         {/* menus area */}
         <div
-          className={`text-sm font-medium tracking-tight max-md:px-3 max-md:bg-brand-primary max-md:w-full left-0 top-full max-md:absolute ${
+          className={`text-sm tracking-tight max-md:px-3 max-md:bg-brand-primary max-md:w-full left-0 top-full max-md:absolute ${
             clicked
               ? "max-md:h-[250px] max-md:border-b border-gray-800"
               : "max-md:h-0"

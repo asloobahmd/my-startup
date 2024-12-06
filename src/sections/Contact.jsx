@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <Element name="contact-us">
-      <section className="py-14 md:py-20 relative overflow-x-hidden">
+      <section className="py-14 md:py-20">
         {/* <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,theme(colors.brand.primary)_40%,#dfbe38_100%)]"></div> */}
         <div className="container p-3 ">
           <div className="relative overflow-hidden  border border-zinc-700 rounded-3xl py-24 px-12 max-sm:px-4">
@@ -27,7 +27,8 @@ const Contact = () => {
                 />
               </svg>
             </div>
-            <h1 className="font-medium text-4xl md:text-6xl text-center tracking-tight md:leading-[1.1] max-w-[600px] mx-auto">
+
+            <h1 className="font-semibold text-4xl md:text-6xl text-center tracking-tight md:leading-[1.1] max-w-[600px] mx-auto">
               Ready to scale your business to{" "}
               <span className="font-instrumentSerif font-medium tracking-normal italic">
                 new heights?{" "}

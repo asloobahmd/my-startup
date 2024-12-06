@@ -2,7 +2,7 @@ export const pricingDetails = {
   plans: [
     {
       name: "Basic",
-      price: 300,
+      price: 100,
       features: [
         "Static website",
         "1-3 pages",
@@ -13,7 +13,7 @@ export const pricingDetails = {
     },
     {
       name: "Standard",
-      price: 500,
+      price: 300,
       features: [
         "Dynamic website",
         "4-10 pages",

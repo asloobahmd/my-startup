@@ -16,9 +16,7 @@ const ProcessCard = ({ item }) => {
         <span className="hidden sm:block ml-2 text-lg text-accent-dark absolute sm:right-0 smm:right-[30px] sm:top-[20px] smm:top-[30px] md:top-[20px]">
           {item?.icon}
         </span>
-        <p className="text-graytext text-base leading-relaxed mt-2">
-          {item.text}
-        </p>
+        <p className="text-graytext text-base mt-2">{item.text}</p>
       </div>
     </div>
   );
