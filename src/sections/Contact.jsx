@@ -34,7 +34,7 @@ const Contact = () => {
                 new heights?{" "}
               </span>
             </h1>
-            <p className=" tracking-tight text-center md:text-xl max-w-[600px] mt-7 mx-auto">
+            <p className="md:text-xl tracking-tight text-center max-w-[600px] mt-7 mx-auto">
               Ready to bring your vision to life? Get in touch with us to
               discuss your project. 👇
             </p>

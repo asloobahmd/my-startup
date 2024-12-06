@@ -30,7 +30,7 @@ const Hero = () => {
             </span>{" "}
             your business with Websites?
           </h1>
-          <p className="text-xl text-center text-graytext">
+          <p className="md:text-xl text-center text-graytext">
             At AxientLabs, we blend innovation, creativity, and technology to
             build custom software that grows with your business. Don't miss the
             opportunity to elevate your business — Book a call now and let's
